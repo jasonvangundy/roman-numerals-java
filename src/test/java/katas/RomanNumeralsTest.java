@@ -76,4 +76,9 @@ public class RomanNumeralsTest {
     public void testTranslates1000Something() throws Exception {
         assertEquals("MCCVI", new RomanNumerals().get(1206));
     }
+
+    @Test
+    public void testTenIsSubtractedFrom1000For900Something() throws Exception {
+        assertEquals("CMXII", new RomanNumerals().get(912));
+    }
 }

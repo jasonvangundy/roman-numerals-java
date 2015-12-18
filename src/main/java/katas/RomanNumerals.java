@@ -19,7 +19,7 @@ public class RomanNumerals {
         String numerals = "";
         ListIterator<Mapping> iterator = mappings.listIterator();
 
-        while (iterator.hasNext()) {
+        while (iterator.hasNext() && num > 0) {
             Mapping mapping = iterator.next();
             int numberOfNumerals = num / mapping.getNum();
             if (numberOfNumerals > MAX_ALLOWED_NUMERAL_REPETITION) {

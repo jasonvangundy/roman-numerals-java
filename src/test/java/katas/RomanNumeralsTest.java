@@ -71,4 +71,9 @@ public class RomanNumeralsTest {
     public void testTranslates500Something() throws Exception {
         assertEquals("DCCXXXII", new RomanNumerals().get(732));
     }
+
+    @Test
+    public void testTranslates1000Something() throws Exception {
+        assertEquals("MCCVI", new RomanNumerals().get(1206));
+    }
 }

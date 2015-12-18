@@ -25,4 +25,9 @@ public class RomanNumeralsTest {
     public void testReturnsVAndIsForEight() throws Exception {
         assertEquals("VIII", new RomanNumerals().get(8));
     }
+
+    @Test
+    public void testRepresentsFourWithIV() throws Exception {
+        assertEquals("IV", new RomanNumerals().get(4));
+    }
 }

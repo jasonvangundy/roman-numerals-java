@@ -1,14 +1,15 @@
 package katas;
 
 
-import java.util.LinkedList;
-import java.util.ListIterator;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class RomanNumerals {
 
-    private static LinkedList<Mapping> mappings;
+    private static List<Mapping> mappings;
     static {
-        mappings = new LinkedList<Mapping>();
+        mappings = new ArrayList<Mapping>();
         mappings.add(new Mapping(10, "X"));
         mappings.add(new Mapping(9, "IX"));
         mappings.add(new Mapping(5, "V"));
@@ -18,7 +19,7 @@ public class RomanNumerals {
 
     public String get(int num) {
         String numerals = "";
-        ListIterator<Mapping> iterator = mappings.listIterator();
+        Iterator<Mapping> iterator = mappings.iterator();
 
         while (iterator.hasNext() && num > 0) {
             Mapping mapping = iterator.next();

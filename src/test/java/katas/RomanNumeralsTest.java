@@ -40,4 +40,15 @@ public class RomanNumeralsTest {
     public void testRepresentsNineWithIX() throws Exception {
         assertEquals("IX", new RomanNumerals().get(9));
     }
+
+    @Test
+    public void testRepresents14WithXIV() throws Exception {
+        assertEquals("XIV", new RomanNumerals().get(14));
+    }
+
+    @Test
+    public void testCanHandleMoreXVICombinations() throws Exception {
+        assertEquals("XXXIX", new RomanNumerals().get(39));
+        assertEquals("XXXVIII", new RomanNumerals().get(38));
+    }
 }

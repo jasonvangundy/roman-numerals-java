@@ -14,15 +14,7 @@ public class Mapping {
         return num;
     }
 
-    public void setNum(int num) {
-        this.num = num;
-    }
-
     public String getNumeral() {
         return numeral;
-    }
-
-    public void setNumeral(String numeral) {
-        this.numeral = numeral;
     }
 }

@@ -51,4 +51,9 @@ public class RomanNumeralsTest {
         assertEquals("XXXIX", new RomanNumerals().get(39));
         assertEquals("XXXVIII", new RomanNumerals().get(38));
     }
+
+    @Test
+    public void testTranslates50Something() throws Exception {
+        assertEquals("LXV", new RomanNumerals().get(65));
+    }
 }

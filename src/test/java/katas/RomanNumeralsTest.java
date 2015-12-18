@@ -66,4 +66,9 @@ public class RomanNumeralsTest {
     public void testTenIsSubtractedFrom100For90Something() throws Exception {
         assertEquals("XCV", new RomanNumerals().get(95));
     }
+
+    @Test
+    public void testTranslates500Something() throws Exception {
+        assertEquals("DCCXXXII", new RomanNumerals().get(732));
+    }
 }

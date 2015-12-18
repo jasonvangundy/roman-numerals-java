@@ -10,4 +10,9 @@ public class RomanNumeralsTest {
     public void testReturnsSingleIForOne() throws Exception {
         assertEquals("I", new RomanNumerals().get(1));
     }
+
+    @Test
+    public void testReturnsIsForMultiples() throws Exception {
+        assertEquals("III", new RomanNumerals().get(3));
+    }
 }

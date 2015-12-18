@@ -6,9 +6,11 @@ import java.util.ListIterator;
 
 public class RomanNumerals {
 
+    public static final int MAX_ALLOWED_NUMERAL_REPETITION = 3;
     private static LinkedList<Mapping> mappings;
     static {
         mappings = new LinkedList<Mapping>();
+        mappings.add(new Mapping(10, "X"));
         mappings.add(new Mapping(5, "V"));
         mappings.add(new Mapping(1, "I"));
     }
@@ -20,12 +22,12 @@ public class RomanNumerals {
         while (iterator.hasNext()) {
             Mapping mapping = iterator.next();
             int numberOfNumerals = num / mapping.getNum();
-            if (4 == numberOfNumerals) {
+            if (numberOfNumerals > MAX_ALLOWED_NUMERAL_REPETITION) {
                 numerals += mapping.getNumeral();
                 iterator.previous();
                 numerals += iterator.previous().getNumeral();
                 num -= numberOfNumerals;
-                numberOfNumerals -= 4;
+                numberOfNumerals = 0;
             }
 
             for (int i = 0; i < numberOfNumerals; i++) {

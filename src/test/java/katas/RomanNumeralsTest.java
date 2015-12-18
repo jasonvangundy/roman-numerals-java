@@ -30,4 +30,9 @@ public class RomanNumeralsTest {
     public void testRepresentsFourWithIV() throws Exception {
         assertEquals("IV", new RomanNumerals().get(4));
     }
+
+    @Test
+    public void testReturnsXForTen() throws Exception {
+        assertEquals("X", new RomanNumerals().get(10));
+    }
 }

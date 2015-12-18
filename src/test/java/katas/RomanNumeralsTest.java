@@ -15,4 +15,9 @@ public class RomanNumeralsTest {
     public void testReturnsIsForMultiples() throws Exception {
         assertEquals("III", new RomanNumerals().get(3));
     }
+
+    @Test
+    public void testReturnsVForFive() throws Exception {
+        assertEquals("V", new RomanNumerals().get(5));
+    }
 }

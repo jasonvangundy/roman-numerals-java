@@ -81,4 +81,10 @@ public class RomanNumeralsTest {
     public void testTenIsSubtractedFrom1000For900Something() throws Exception {
         assertEquals("CMXII", new RomanNumerals().get(912));
     }
+
+    @Test
+    public void testAdditionalKataProvidedTestCases() throws Exception {
+        assertEquals("MLXVI", new RomanNumerals().get(1066));
+        assertEquals("MCMLXXXIX", new RomanNumerals().get(1989));
+    }
 }

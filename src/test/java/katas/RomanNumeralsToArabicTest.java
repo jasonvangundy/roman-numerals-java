@@ -25,4 +25,9 @@ public class RomanNumeralsToArabicTest {
     public void testTranslatesVAndICombination() throws Exception {
         assertEquals(8, new RomanNumerals().romanNumeralToArabic("VIII"));
     }
+
+    @Test
+    public void testTranslatesIV() throws Exception {
+        assertEquals(4, new RomanNumerals().romanNumeralToArabic("IV"));
+    }
 }

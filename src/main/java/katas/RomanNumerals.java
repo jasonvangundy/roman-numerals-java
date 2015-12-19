@@ -23,7 +23,7 @@ public class RomanNumerals {
         mappings.add(new Mapping(1, "I"));
     }
 
-    public String get(int num) {
+    public String arabicToRomanNumeral(int num) {
         String numerals = "";
         Iterator<Mapping> iterator = mappings.iterator();
 
@@ -36,5 +36,9 @@ public class RomanNumerals {
             }
         }
         return numerals;
+    }
+
+    public int romanNumeralToArabic(String romanNumeral) {
+        return 1;
     }
 }

@@ -80,4 +80,10 @@ public class RomanNumeralsToArabicTest {
     public void testTranslatesCM() throws Exception {
         assertEquals(902, new RomanNumerals().romanNumeralToArabic("CMII"));
     }
+
+    @Test
+    public void testAdditionalKataProvidedTestCases() throws Exception {
+        assertEquals(1066, new RomanNumerals().romanNumeralToArabic("MLXVI"));
+        assertEquals(1989, new RomanNumerals().romanNumeralToArabic("MCMLXXXIX"));
+    }
 }

@@ -38,7 +38,7 @@ public class RomanNumerals {
         return numerals;
     }
 
-    public int romanNumeralToArabic(String romanNumeral) {
-        return 1;
+    public int romanNumeralToArabic(String numeral) {
+        return numeral.length();
     }
 }

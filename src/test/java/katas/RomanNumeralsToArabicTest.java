@@ -10,4 +10,9 @@ public class RomanNumeralsToArabicTest {
     public void testTranslatesSingleI() throws Exception {
         assertEquals(1, new RomanNumerals().romanNumeralToArabic("I"));
     }
+
+    @Test
+    public void testTranslatesMultipleIs() throws Exception {
+        assertEquals(3, new RomanNumerals().romanNumeralToArabic("III"));
+    }
 }

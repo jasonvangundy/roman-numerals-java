@@ -39,6 +39,16 @@ public class RomanNumerals {
     }
 
     public int romanNumeralToArabic(String numeral) {
-        return numeral.length();
+        int value = 0;
+        Iterator<Mapping> iterator = mappings.iterator();
+
+        while (iterator.hasNext()) {
+            Mapping mapping = iterator.next();
+            while (numeral.matches("^" + mapping.getNumeral() + "\\S*")) {
+                value += mapping.getNum();
+                numeral = numeral.substring(mapping.getNumeral().length());
+            }
+        }
+        return value;
     }
 }

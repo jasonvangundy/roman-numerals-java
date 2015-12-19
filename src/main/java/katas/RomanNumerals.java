@@ -16,6 +16,7 @@ public class RomanNumerals {
         mappings.add(new Mapping(100, "C"));
         mappings.add(new Mapping(90, "XC"));
         mappings.add(new Mapping(50, "L"));
+        mappings.add(new Mapping(40, "XL"));
         mappings.add(new Mapping(10, "X"));
         mappings.add(new Mapping(9, "IX"));
         mappings.add(new Mapping(5, "V"));

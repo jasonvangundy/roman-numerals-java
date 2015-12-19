@@ -40,4 +40,9 @@ public class RomanNumeralsToArabicTest {
     public void testTranslatesIX() throws Exception {
         assertEquals(9, new RomanNumerals().romanNumeralToArabic("IX"));
     }
+
+    @Test
+    public void testTranslatesL() throws Exception {
+        assertEquals(52, new RomanNumerals().romanNumeralToArabic("LII"));
+    }
 }

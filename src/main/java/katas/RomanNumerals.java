@@ -13,6 +13,7 @@ public class RomanNumerals {
         mappings.add(new Mapping(1000, "M"));
         mappings.add(new Mapping(900, "CM"));
         mappings.add(new Mapping(500, "D"));
+        mappings.add(new Mapping(400, "CD"));
         mappings.add(new Mapping(100, "C"));
         mappings.add(new Mapping(90, "XC"));
         mappings.add(new Mapping(50, "L"));
